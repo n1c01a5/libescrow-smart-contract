@@ -1,6 +1,6 @@
 {
-  "name": "kleros-interaction",
-  "version": "0.1.0",
+  "name": "libescrow-smart-contract",
+  "version": "0.0.1",
   "description": "Smart contracts interacting with Kleros.",
   "main": "index.js",
   "files": [
