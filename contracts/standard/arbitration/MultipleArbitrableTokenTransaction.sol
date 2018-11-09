@@ -295,7 +295,7 @@ contract MultipleArbitrableTokenTransaction {
         require(_amount <= transaction.amount, "The amount paid has to be less than the transaction.");
 
         ERC20Interface = ERC20(transaction.token);
-        ERC20Interface.transfer(transaction.seller, _amount);
+        ERC20Interface.transferFrom(transaction.token, transaction.seller, _amount);
         transaction.amount -= _amount;
     }
 
